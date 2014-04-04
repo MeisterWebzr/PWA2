@@ -13,8 +13,8 @@ html {
       height: 100%;
       width: 100%;
       padding: 0;
-      margin: 0;
-	  
+      margin: 0 auto;
+	  /*background-image: url(images/bkg1.png); */	  
 }
 
 body{
@@ -24,7 +24,77 @@ body{
 	padding: 0;	
 }
 
+/* Admin Page 
+--------------------------------------------------------------------*/
 
+header{
+
+	width: 960px;
+	height: 100px;
+	margin: 4px auto;
+	padding: 2px;
+	background-color: #60b831;
+}
+.smalllogo{
+	width: 250px;
+	margin: 9px;
+	padding: 2px;
+	float: left;
+	/*border: 1px solid white;*/
+}
+
+.adminlogo{
+	/*border: 2px dotted black;*/
+	width: 250px;
+	margin: 9px;
+	padding: 2px;
+	float: right;
+	opacity: 0.2;
+	/*border: 1px solid white;*/
+
+}
+
+.adminlogo img{
+	margin: 0 auto;
+	padding: 2px;
+	margin: 0 auto;
+}
+
+.adminnav{
+    width: 240px;
+    height: 500px;
+    margin-top: 5px;
+	padding: 2px;
+	background-color: #000000;
+	opacity: 0.9999;
+}
+.adminnav ul li a{
+
+	width: 190px;
+	height: 35px;
+	margin: 5px;
+	padding: 5px;
+	color: #60b831;
+	background-color: #eee;
+	display: block;
+	/*clear: both;*/
+	text-decoration: none;
+	list-style-type: none;
+	overflow: hidden;
+	font-family: Impact, arial;
+}
+
+
+.adminui{
+
+	width: 700px;
+	height: 550px;
+	margin: 5px auto;
+	padding: 2px;
+	background-color: grey;
+	float: right;
+
+}
 
 
 /*Main Navigation
@@ -33,12 +103,15 @@ nav {
     width: 100%;
     text-align: center;
     position: relative;
-    top: 44px;
- 	left: 165px;
+    padding: 2px;
+    top: 0px;
+ 	left: 0px;
     bottom: 0;
-
     overflow: hidden;
-    
+    background-color: black;
+    opacity:0.123;
+    clear: both;
+	    
 
 }
 
@@ -46,7 +119,7 @@ nav ul{
 	
 	width: 100%;
 	margin: 0 auto;
-	padding: 0;
+	padding: 2px;
 	list-style-type: none;
 
 	/*background: #539b2a;*/
@@ -59,6 +132,7 @@ nav ul li{
 	font-family: "Helvetica Neue";
 	display: inline-block;
     vertical-align: right;
+    padding: 2px;
     margin: 0 auto;
     font-size: 20px;
     letter-spacing: .02em;
