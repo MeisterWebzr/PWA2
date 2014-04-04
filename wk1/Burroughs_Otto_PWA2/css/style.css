@@ -24,6 +24,39 @@ body{
 	padding: 0;	
 }
 
+
+.tagline{
+
+	position: absolute;
+	top: 376px;
+	left: 470px;
+	width: auto;
+	text-align: center;
+	font-family: "Helvetica Neue", arial;
+	font-size: 20px;
+
+
+}
+
+	
+
+
+
+
+
+}
+/* login Page 
+--------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
 /* Admin Page 
 --------------------------------------------------------------------*/
 
