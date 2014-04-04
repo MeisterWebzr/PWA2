@@ -1,0 +1,175 @@
+/*
+
+	Project: Fitness Management
+	Author: Otto "Meister" Burroughs
+	Date: 4/3/2014
+	Course: PWA2
+	Instructor: Crystal Silverstro
+
+*/
+
+html { 
+
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+	  
+}
+
+body{
+
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0;	
+}
+
+
+
+
+/*Main Navigation
+--------------------------------------------------------------------*/
+nav {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 44px;
+ 	left: 165px;
+    bottom: 0;
+
+    overflow: hidden;
+    
+
+}
+
+nav ul{
+	
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+
+	/*background: #539b2a;*/
+
+
+}
+
+nav ul li{
+
+	font-family: "Helvetica Neue";
+	display: inline-block;
+    vertical-align: right;
+    margin: 0 auto;
+    font-size: 20px;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    float: right;
+
+	
+
+}
+
+nav ul li a {
+    color: #eeeeee;
+    text-decoration: none;
+    margin-right: 20px;
+    
+
+}
+
+/* Logo
+--------------------------------------------------------------------*/
+.logo{
+	
+	position: absolute;
+	left: 530px;
+	top: 199px;
+	margin: 0 auto;
+	padding: 20px;
+
+}
+
+
+
+/* Main CTA login and registration buttons
+--------------------------------------------------------------------*/
+.login{
+	position: absolute;
+	top: 475px;
+	left: 720px;
+	width: auto;
+	
+}
+
+.registration{
+	position: absolute;
+	top: 476px;
+	left: 490px;
+	width: auto;
+
+}
+	
+
+/* Registration Page Form inputs
+--------------------------------------------------------------------*/
+
+.form{
+	margin: 0 auto;
+	padding: 5px;
+	width: 450px;
+	height: 300px;
+	position: relative;
+	top: 340px;
+	
+}
+
+.twitter{
+
+	position: absolute;
+	top: 220px;
+	left: 265px;
+	
+}
+
+.facebook{
+
+	position: absolute;
+	top: 170px;
+	left: 270px;
+	
+}
+
+
+/* Footer
+--------------------------------------------------------------------*/
+footer {
+    width: 100%;
+    top: 740px;
+    left: 0;
+    text-align: center;
+    position: absolute;
+    
+    overflow: hidden
+}
+
+footer ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    color: red
+}
+footer ul li {
+	font-family: "Helvetica Neue", Arial, serif;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px 5px;
+    font-size: 12px;
+    letter-spacing: .02em;
+
+
+}
+
+footer ul li a {
+    color: #000;
+    text-decoration: none;
+}
