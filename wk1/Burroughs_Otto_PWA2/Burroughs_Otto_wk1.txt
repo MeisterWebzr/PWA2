@@ -1,8 +1,10 @@
-/* the humans responsible & colophon */
-/* humanstxt.org */
+/* Otto "Meister" Burroughs */
+/* WDDBS - Online */
+/* PWA 2 SEC 1*/
+/* Week 1 Assignment*/
 
 /* TEAM */
-  <your title>: <your name>
+  <your title>: <Otto "Meister" Burroughs>
   Site: 
   Twitter: 
   Location: 
