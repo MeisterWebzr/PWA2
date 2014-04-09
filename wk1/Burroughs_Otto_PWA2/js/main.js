@@ -1,6 +1,6 @@
 /*  
-	Your Project Title
-	Author: You
+	Fitness Management
+	Author: Otto "Meister" Burroughs
 */
 
 (function($){
@@ -34,6 +34,20 @@
 			}
 		});
 	};
+
+	/*
+	===============================================
+	========================= WELCOME PAGE TEXT ANIMATION	
+	*/
+
+
+	$(".tagline").html();
+	/*$(".tagline").text("Laurie was here!");*/
+	var $main = $(".tagline p");
+	$main.text("Fitness Management").animate({fontSize: 40}, 1000);
+
+
+
 	
 	
 

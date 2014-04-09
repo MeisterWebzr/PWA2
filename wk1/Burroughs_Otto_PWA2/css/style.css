@@ -14,7 +14,13 @@ html {
       width: 100%;
       padding: 0;
       margin: 0 auto;
-	  /*background-image: url(images/bkg1.png); */	  
+	  background-image:url('http://g8dezigns.com/fit/bkg3.jpg');
+	  /*
+	  background-image:url('http://g8dezigns.com/fit/bkg3.jpg');
+	  background-image:url('http://g8dezigns.com/fit/bkg3.jpg');
+	  */
+	  background-position: center;
+	  background-repeat: no-repeat;
 }
 
 body{
@@ -28,12 +34,12 @@ body{
 .tagline{
 
 	position: absolute;
-	top: 376px;
-	left: 470px;
-	width: auto;
+	top: 350px;
+	left: 460px;
+	width: 505px;
 	text-align: center;
 	font-family: "Helvetica Neue", arial;
-	font-size: 20px;
+	font-size: 24px;
 
 
 }
@@ -98,8 +104,9 @@ header{
     height: 500px;
     margin-top: 5px;
 	padding: 2px;
-	background-color: #000000;
-	opacity: 0.9999;
+
+    background: rgb(0, 0, 0); /* The Fallback */
+    background: rgba(0, 0, 0, 0.5); 
 }
 .adminnav ul li a{
 
@@ -121,10 +128,12 @@ header{
 .adminui{
 
 	width: 700px;
-	height: 550px;
+	height: 500px;
 	margin: 5px auto;
 	padding: 2px;
-	background-color: grey;
+	border: 1px  solid white;
+	background: rgb(0, 0, 0); /* The Fallback */
+    background: rgba(0, 0, 0, 0.5); 
 	float: right;
 
 }
@@ -134,15 +143,13 @@ header{
 --------------------------------------------------------------------*/
 nav {
     width: 100%;
+    margin: .5 auto;
+    padding: 4px;
     text-align: center;
     position: relative;
-    padding: 2px;
-    top: 0px;
- 	left: 0px;
-    bottom: 0;
     overflow: hidden;
-    background-color: black;
-    opacity:0.123;
+    background: rgb(0, 0, 0); /* The Fallback */
+    background: rgba(0, 0, 0, 0.9); 
     clear: both;
 	    
 
