@@ -50,14 +50,16 @@ body{
 
 #mainCTA{
 
-	margin: 0 auto;
-	padding: 5px;
+	margin: 40px auto;
+	padding: 10px;
 	width: 450px;
 	height: 300px;
 	text-align: justify;
 	font-family: "Helvetica Neue", Arial;
 	font-size: 15px;
 	float: right;
+	background-color: #eee;
+	border: 2px solid #eee;
 	position: relative;
 }
 
@@ -368,6 +370,7 @@ ul.sdt_menu li div.sdt_box a:hover{
  	
  	color: #fff;
 }
+
 
 
 
