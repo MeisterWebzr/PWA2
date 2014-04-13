@@ -119,7 +119,17 @@
 		checkLoginState();
 	};
 	
-	
+	/*testing commint to wk2*/
+	/*
+	*
+	*there was an error in committing to branch 2 which is wk2 somehow all commmits for week to were sent 
+	* to wk1
+	*/
+
+
+
+
+
 	init();
 	
 		
