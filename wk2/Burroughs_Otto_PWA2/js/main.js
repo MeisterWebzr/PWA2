@@ -109,44 +109,6 @@
 	========================= ADMIN PAGE Interface
 	*/
 
-	$(document).ready(function(){
-		
-		var accordion=$('#group-of-five').accordion();
-
-		$('#nutrition').click(function(e) {
-			e.preventDefault();
-			
-			$group.accordion();
-		});
-
-		$('#acc-skip2').click(function(e) {
-			e.preventDefault();
-			
-			$group.accordion('option', 'active', 1);
-		});
-
-		$('#acc-skip3').click(function(e) {
-			e.preventDefault();
-			
-			$group.accordion('option', 'active', 2);
-		});
-		$('#acc-skip4').click(function(e) {
-			e.preventDefault();
-			
-			$group.accordion('option', 'active', 3);
-		});
-
-		$('#acc-skip5').click(function(e) {
-			e.preventDefault();
-			
-			$group.accordion('option', 'active', 4);
-		});
-		$('#acc-skip6').click(function(e) {
-			e.preventDefault();
-			
-			$group.accordion('option', 'active', 0);
-		});
-	});	
 	
 
 	// 	============================================

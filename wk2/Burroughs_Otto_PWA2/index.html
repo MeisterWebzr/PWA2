@@ -24,9 +24,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<!-- CSS concatenated and minified via ant build script -->
-	<link rel="stylesheet" href="themes/fitcolour.min.css" />
+   
+	<!--<link rel="stylesheet" href="themes/fitcolour.min.css" />-->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
-	<link rel="stylesheet" href="css/style.css?v=1">
+	<link rel="stylesheet" href="css/style.css">
+	
+	
 
 	<!-- end CSS-->
 	
@@ -81,7 +84,7 @@
 						  <div class="sdt_box">
 							   <a href="#">View Charts</a>
 							   <a href="#">Track progress</a>
-							   <a href="#">Social Network</a>
+							   <!--<a href="#">Social Network</a>-->
 						  </div>
 					 </li>
 				</ul>
@@ -92,7 +95,7 @@
 						   <span class="sdt_active"></span>
 						   <span class="sdt_wrap">
 						    <span class="sdt_link">Admin</span>
-						    <span class="sdt_descr">Management tools</span>
+						    <span class="sdt_descr">VIP Tools</span>
 						   </span>
 						  </a>
 						  <div class="sdt_box">
@@ -100,6 +103,23 @@
 							   <a href="#">Workouts</a>
 							   <a href="#">Tips &amp; Tricks</a>
 						  </div>
+					 </li>
+				</ul>
+				<ul id="sdt_menu" class="sdt_menu">
+					 <li>
+						  <a href="login.html">
+						   <img src="images/3.jpg" alt="login"/>
+						   <span class="sdt_active"></span>
+						   <span class="sdt_wrap">
+						    <span class="sdt_link">Login</span>
+						    <span class="sdt_descr">Account access</span>
+						   </span>
+						  </a>
+						  <!--<div class="sdt_box">
+							   <a href="#">View Diet</a>
+							   <a href="#"> Workouts</a>
+							   <a href="#"><Tips &amp; Tricks</a>
+						  </div>-->
 					 </li>
 				</ul>
 
@@ -131,16 +151,76 @@
 		</div>
 	</div>
 
+	<div id="terms-modal" class="white-popup-block mfp-hide">
+	<h1>Statement of Rights and Responsibilities</h1>
+		<p>
+		This agreement was written in English (US). To the extent any translated version of this agreement conflicts with the English version, the English version controls.  Please note that Section 17 contains certain changes to the general terms for users outside the United States.</p>
 
+		<b>Date of Last Revision: November 15, 2013.</b>
+
+		<h3>Statement of Rights and Responsibilities</h3>
+		<p>
+		This Statement of Rights and Responsibilities ("Statement," "Terms," or "SRR") derives from the Fitness Management Principles, and is our terms of service that governs our relationship with users and others who interact with Fitness Management. By using or accessing Fitness Management, you agree to this Statement, as updated from time to time in accordance with Section 14 below. Additionally, you will find resources at the end of this document that help you understand how Fitness Management works.
+		</p>
+		
+		<h3>Statement of Rights and Responsibilities</h3>
+		<p>
+		Your privacy is very important to us. We designed our Data Use Policy to make important disclosures about how you can use Fitness Management to share with others and how we collect and can use your content and information.  We encourage you to read the Data Use Policy, and to use it to help you make informed decisions.</p>
+		<p><a class="popup-modal-dismiss" href="#">Dismiss</a></p>
+		<h3>Statement of Rights and Responsibilities</h3>
+		<p>
+		This Statement of Rights and Responsibilities ("Statement," "Terms," or "SRR") derives from the Fitness Management Principles, and is our terms of service that governs our relationship with users and others who interact with Fitness Management. By using or accessing Fitness Management, you agree to this Statement, as updated from time to time in accordance with Section 14 below. Additionally, you will find resources at the end of this document that help you understand how Fitness Management works.
+		</p>
+		
+		<h3>Statement of Rights and Responsibilities</h3>
+		<p>
+		Your privacy is very important to us. We designed our Data Use Policy to make important disclosures about how you can use Fitness Management to share with others and how we collect and can use your content and information.  We encourage you to read the Data Use Policy, and to use it to help you make informed decisions.</p>
+		<p><a class="popup-modal-dismiss" href="#">Dismiss</a></p>
+</div>
+
+		<div id="jobs-modal" class="white-popup-block mfp-hide">
+			<h1>How we hire</h1>
+				<!--<img  class="hirelogo"src="images/smlogo.png">-->
+				
+				<b>
+				We’re looking for our next Fitness Management Geek - someone who’s good for the role, good for Fitness Mangement and good at lots of things.</b>
+				<p>
+				Things move quickly around here. At Internet speed. That means we have to be nimble, both in how we work and how we hire. We look for people who are great at lots of things, love big challenges and welcome big changes. We can’t have too many specialists in just one particular area. We’re looking for people who are good for Fitness Mangement—and not just for right now, but for the long term.
+				</p>
+				<p>
+				This is the core of how we hire. Our process is pretty basic; the path to getting hired usually involves a first conversation with a recruiter, a phone interview and an onsite interview at one of our offices. But there are a few things we’ve baked in along the way that make getting hired at Fitness Mangement a little different.</p>
+				<p><a class="popup-modal-dismiss" href="#">Dismiss</a></p>
+		</div>
 
  <div>
 	<!-- jquery -->
 	<script type="url" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery/j11104.js"></script>
 	<script type="text/javascript" src="js/jquery/jQuery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	 <script src="js/jquery.magnific-popup.js"></script>
 
 	
 	<!-- plugins -->
+
+	<!-- Modal Popup with Lightbox -->
+	<script type="text/javascript">
+
+		$(function () {
+	$('.popup-modal').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#username',
+		modal: true
+	});
+	$(document).on('click', '.popup-modal-dismiss', function (e) {
+		e.preventDefault();
+		$.magnificPopup.close();
+	});
+	});
+
+	</script>
+
  	<script type="text/javascript">
 
 	$(function() {
@@ -222,7 +302,10 @@
 	
 	<!-- main -->
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/query.magnific-popup.js.txt"></script>
 
+
+	<!-- Scripts -->
 
 	
 	  
@@ -230,11 +313,11 @@
 </body>
 	<footer>
 		<ul>
-			<li><a href="http://www.twitter.com">@FitnessManagement</a></li>
-			<li><a href=" ">Jobs</a></li>
-			<li><a href=" ">Contact</a></li>
-			<li><a href=" ">Terms</a></li>
-			<li><a href=" ">Privacy</a></li>
+			<li><a  href="http://www.twitter.com">@FitnessManagement</a></li>
+			<li><a class="popup-modal" href="#jobs-modal">Jobs</a></li>
+			<li><a href=" "><==Click==></a></li>
+			<li><a class="popup-modal" href="#terms-modal">Terms</a></li>
+			<li><a href=" "><===Click</a></li>
 			<li><a href=" "> &copy; 2015 Fitness Management, LLC </a></li>
 		</ul>
 	</footer>

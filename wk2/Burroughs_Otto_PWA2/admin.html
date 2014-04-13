@@ -57,14 +57,14 @@
 			</ul>
 			<div id="accordintable">
 			 <div class="exampleaccordian">
-				<div id="group-of-five">
+				<div id="accordion">
 					<h1>Breakfast | 1st meal</h1>
 					<div>
 						<p>
 							1/2 whole wheat bagel, 1 Tbsp. whipped cream cheese,
 							2oz. smoked salmon (lox), 2 slices tomato and 1/2 grapefruit. Toast half of the bagel and add toppings. <b>291 cal</b> | <b>23 gr protien</b>
 						</p>
-							<a href="#step1" id="acc-skip2"> Next >></a>
+							<!--<a href="#step1" id="acc-skip2"> Next >></a>-->
 					</div>
 
 					<h1>Mid-Morning Snack | 2nd meal</h1>
@@ -72,7 +72,7 @@
 						<p>
 							2 slices of whole wheat bread, 3 slices of turkey bacon, Sliced tomato, to taste Lettucec, to taste 1 fresh pear. Make a sandwhich of the above items and eat with pear. <b>297 calories</b> | <b> 26g protien</b>
 						</p>
-							<a href="#step2" id="acc-skip3"> Next >></a>
+							<!--<a href="#step2" id="acc-skip3"> Next >></a>-->
 					</div>
 
 					<h1>Lunch | 3rd meal</h1>
@@ -80,14 +80,14 @@
 						<p>
 							4oz. lean roast beef, 1/2 6in whole wheat pita pocket, sliced cherry tomatoes, romaine lettuce, dark salad greens, sliced cucumbers, sliced mushrooms. Pile all this yummy items int the pocket and serve with side of salad, cucmubers and mushrooms, dressed with a fresh squee of lemon juice. <b>297 calories</b> | <b> 26g protien</b>
 						</p>
-							<a href="#step3" id="acc-skip4"> Next >></a>
+							<!--<a href="#step3" id="acc-skip4"> Next >></a>-->
 					</div>
 					<h1>Afternoon Snack | 4th meal</h1>
 					<div>
 						<p>
 							3oz (about 6 pieces) of sashimi, 1/2 cup brown rice, steamed. Side of salad of mixed greens, 2 tbsp. Asian ginger dressing. Have any varity of sashimi with a side of rice, and a side of mixed greens topped with Asian dressing. <b>319 calories</b> | <b> 24gr protien</b>
 						</p>
-							<a href="#step4" id="acc-skip5"> Next >></a>
+							<!--<a href="#step4" id="acc-skip5"> Next >></a>-->
 					</div>
 
 					<h1>Dinner | 5th meal</h1>
@@ -95,7 +95,7 @@
 						<p>
 							3 to 4 oz. flank steak, filet mignon, or sirloin. Olive oil, Sea salt and pepper to taste, 1 small baked potato, dijon mustard, 1 cup steam broccoli, Lemon juice to taste. Brush steak with olive oil and sprinkle with sea salt and freshly ground pepper. Grill or broil steak on both sides for 5-7 min, or until degree of doneness is achieved. Serve steak with small baked potato topped with country dijon mustard and steamed broccoli topped with fresh lemon juice.<b>304 calories</b> | <b> 30gr protien</b>
 						</p>
-							<a href="#step5" id="acc-skip6"> Back to 1st meal >></a>
+							<!--<a href="#step5" id="acc-skip6"> Back to 1st meal >></a>-->
 					</div>
 				</div>
 				
@@ -115,25 +115,66 @@
 
 	
 	<!-- plugins -->
+
+	<script>
+	  $(function() {
+	    
+	    $("#accordion").accordion();
+
+	  });
+
+	  $('#acc-skip2').click(function() {
+				e.preventDefault();
+				$.accordion('option', 'active', 1);
+			});
+  </script>
  	
+    <script type="text/javascript">
+
+		$(function () {
+		
+		$('.popup-modal').magnificPopup({
+		
+		type: 'inline',
+		preloader: false,
+		focus: '#username',
+		modal: true
+	});
+
+	$(document).on('click', '.popup-modal-dismiss', function (e) {
+		
+		e.preventDefault();
+		$.magnificPopup.close();
+	});
+
+
+	</script>
     
-    
+	
 	
 	<!-- main -->
 	<script type="text/javascript" src="js/main.js"></script>
-  
+	<script type="text/javascript" src="js/query.magnific-popup.js.txt"></script>
+
+
+	<!-- Scripts -->
+
+	
+	  
+
 </body>
 	<footer>
 		<ul>
-			<li><a href="http://www.twitter.com">@FitnessManagement</a></li>
-			<li><a href=" ">Jobs</a></li>
+			<li><a  href="http://www.twitter.com">@FitnessManagement</a></li>
+			<li><a class="popup-modal" href="#jobs-modal">Jobs</a></li>
 			<li><a href=" ">Contact</a></li>
-			<li><a href=" ">Terms</a></li>
+			<li><a class="popup-modal" href="#terms-modal">Terms</a></li>
 			<li><a href=" ">Privacy</a></li>
 			<li><a href=" "> &copy; 2015 Fitness Management, LLC </a></li>
 		</ul>
 	</footer>
 </html>
+
 
 
 

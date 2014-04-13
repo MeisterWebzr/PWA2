@@ -49,6 +49,22 @@
 	
 	
 	<!-- plugins -->
+	<script type="text/javascript">
+
+		$(function () {
+	$('.popup-modal').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#username',
+		modal: true
+	});
+	$(document).on('click', '.popup-modal-dismiss', function (e) {
+		e.preventDefault();
+		$.magnificPopup.close();
+	});
+	});
+
+	</script>
 
 	
 	<!-- main -->
@@ -57,10 +73,10 @@
 </body>
 	<footer>
 		<ul>
-			<li><a href="http://www.twitter.com">@FitnessManagement</a></li>
-			<li><a href=" ">Jobs</a></li>
+			<li><a  href="http://www.twitter.com">@FitnessManagement</a></li>
+			<li><a class="popup-modal" href="#jobs-modal">Jobs</a></li>
 			<li><a href=" ">Contact</a></li>
-			<li><a href=" ">Terms</a></li>
+			<li><a class="popup-modal" href="#terms-modal">Terms</a></li>
 			<li><a href=" ">Privacy</a></li>
 			<li><a href=" "> &copy; 2015 Fitness Management, LLC </a></li>
 		</ul>
@@ -71,22 +87,8 @@
 
 
 
-	
-	
-	
-	<!-- jquery -->
-	
-
-	<!-- plugins -->
 
 	
-	<!-- main -->
-	<script type="text/javascript" src="js/main.js"></script>
-  
-</body>
-</html>
-
-
 
 
 

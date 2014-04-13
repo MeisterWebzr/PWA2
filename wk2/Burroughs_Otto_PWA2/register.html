@@ -48,11 +48,11 @@
 						    <span class="sdt_descr"></span>
 						   </span>
 						  </a>
-						  <div class="sdt_box">
+						 <!-- <div class="sdt_box">
 							   <a href="#">About Us</a>
 							   <a href="#">Success Stories</a>
 							   <a href="#">Legal</a>
-						  </div>
+						  </div>-->
 					 </li>
 				</ul>
 				<ul id="sdt_menu" class="sdt_menu">
@@ -65,11 +65,11 @@
 						    <span class="sdt_descr">Become a member</span>
 						   </span>
 						  </a>
-						  <div class="sdt_box">
+						 <!-- <div class="sdt_box">
 							   <a href="#">View Charts</a>
 							   <a href="#">Track progress</a>
 							   <a href="#">Social Network</a>
-						  </div>
+						  </div>-->
 					 </li>
 				</ul>
 				<ul id="sdt_menu" class="sdt_menu">
@@ -79,7 +79,7 @@
 						   <span class="sdt_active"></span>
 						   <span class="sdt_wrap">
 						    <span class="sdt_link">Admin</span>
-						    <span class="sdt_descr">Management tools</span>
+						    <span class="sdt_descr">VIP tools</span>
 						   </span>
 						  </a>
 						  <div class="sdt_box">
@@ -137,7 +137,7 @@
 								<span>Send me updates</span>
 							</div>
 							<input type="submit" value="Register" />
-							<a href="index.html" rel="login" class="linkform">You have an account already? Log in here</a>
+							<a href="login.html" rel="login" class="linkform">You have an account already? Log in here</a>
 							<div class="clear"></div>
 						</div>
 					</form>
@@ -285,17 +285,36 @@
 
 
 	</script>
+
+	<!-- Modal Popup with Lightbox -->
+	<script type="text/javascript">
+
+		$(function () {
+	$('.popup-modal').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#username',
+		modal: true
+	});
+	$(document).on('click', '.popup-modal-dismiss', function (e) {
+		e.preventDefault();
+		$.magnificPopup.close();
+	});
+	});
+
+	</script>
 	
 	<!-- main -->
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/query.magnific-popup.js.txt"></script>
   
 </body>
 	<footer>
 		<ul>
-			<li><a href="http://www.twitter.com">@FitnessManagement</a></li>
-			<li><a href=" ">Jobs</a></li>
+			<li><a  href="http://www.twitter.com">@FitnessManagement</a></li>
+			<li><a class="popup-modal" href="#jobs-modal">Jobs</a></li>
 			<li><a href=" ">Contact</a></li>
-			<li><a href=" ">Terms</a></li>
+			<li><a class="popup-modal" href="#terms-modal">Terms</a></li>
 			<li><a href=" ">Privacy</a></li>
 			<li><a href=" "> &copy; 2015 Fitness Management, LLC </a></li>
 		</ul>
