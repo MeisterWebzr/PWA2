@@ -1,0 +1,177 @@
+<!doctype html>  
+
+<!--
+	This is the main index of the application
+	
+	All your script tags should be at the bottom of this file
+	
+	The only html element in the body is the container div
+	Your code should load your page templates into the container
+-->
+
+<html id="projectback" lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Fitness Management | Add Workouts</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- CSS concatenated and minified via ant build script-->
+	<!--<link rel="stylesheet" href="css/pureiso.css">-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.4.custom.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+
+
+
+	<!-- end CSS-->
+	
+</head>
+<header>
+
+	<div class="adminlogo"><a href="index.html"><img src="images/admin_logo.png" title="Fitness Management LLC,"></a></div>
+	<div class="smalllogo"><a href="index.html"><img src="images/smlogo.png" title="Fitness Management LLC,"></a></div><div class="adminnav2">
+					<ul>
+						<li><a id="projects"> Dashboard </a></li>
+						<!--<li><a id="workoutsbtn"> Add Workouts</a></li>-->
+						<li><a id="logOut" name="logOut"> Sign Out</a></li>
+					</ul>
+				</div>
+
+</header>
+<body>
+
+
+	<div id="container">
+	
+		<div class="adminui1">
+
+			
+			<div id="add">
+				<h1 class="mainh1">Enter your workout details below.</h1>
+			<form class="pure-form pure-form-aligned" id="addform">
+				
+				<fieldset>
+				
+				<div class="pure-control-group">		
+				  
+				  <label id="addlabel">Type of Excercise:</label>
+				  <input name="projectName" type="text" id="projectName">
+			 	 
+			 	</div>
+                
+                <div class="pure-control-group"> 
+				
+					<label id="addlabel" >Number of Sets:</label>
+					<input name="projectDescription" type="text" id="projectDescription">
+				
+				</div>
+
+				<div class="pure-control-group"> 
+					 
+					 <label id="addlabel" >Number of Reps:</label>
+					 <input  name="projectDueDate" type="text" id="projectDueDate" required>
+				
+				</div>
+				<div class="pure-control-group">
+				  
+				    <label id="addlabel">How'd you feel?:</label>
+				    <input name="projectStatus" type="text" id="projectStatus">
+				</div>
+
+			<div class="pure-button pure-button-primary"><input name="addButton" type="submit" id="addButton" value="Add"></div>
+
+				  </fieldset>
+				</form>
+			</div>
+
+    <div>
+
+
+	<!-- jquery -->
+	<script type="url" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery/j11104.js"></script>
+	<script type="text/javascript" src="js/jquery/jQuery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+
+
+	
+	<!-- plugins -->
+
+
+	<script>
+	  $(function() {
+	    
+	    $("#accordion").accordion();
+
+	  });
+
+	  $('#acc-skip2').click(function() {
+				e.preventDefault();
+				$.accordion('option', 'active', 1);
+			});
+  </script>
+ 	
+   
+
+	<!-- Modal Popup with Lightbox -->
+	<script type="text/javascript">
+
+		$(function () {
+	$('.popup-modal').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#username',
+		modal: true
+	});
+	$(document).on('click', '.popup-modal-dismiss', function (e) {
+		e.preventDefault();
+		$.magnificPopup.close();
+	});
+	});
+
+	</script>
+    
+	
+	
+	<!-- main -->
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific_popup.js"></script>
+
+
+	<!-- Scripts -->
+
+	
+	  
+
+</body>
+	<footer>
+		<ul>
+			<li><a  href="http://www.twitter.com">@FitnessManagement</a></li>
+			<li><a class="popup-modal" href="#jobs-modal">Jobs</a></li>
+			<li><a href=" "><==Click==></a></li>
+			<li><a class="popup-modal" href="#terms-modal">Terms</a></li>
+			<li><a href=" "><===Click</a></li>
+			<li><a href=" "> &copy; 2015 Fitness Management, LLC </a></li>
+		</ul>
+	</footer>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
